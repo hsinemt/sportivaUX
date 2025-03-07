@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportiva - Products Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="font-sans bg-background">
+<nav class="bg-primary text-background">
+  <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="text-xl font-bold">Sportiva</div>
+    <div class="flex-1 mx-6 max-w-md hidden md:block">
+      <div class="relative">
+        <input type="text" placeholder="Search products..." class="w-full rounded-full px-4 py-1 text-text">
+        <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-text/40">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4">
+      <button class="md:hidden mobile-menu-button" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <button class="hover:text-background/70 hidden md:block"><i class="far fa-user"></i></button>
+      <button class="hover:text-background/70 hidden md:block"><i class="far fa-heart"></i></button>
+      <a href="cart.html">
+        <button class="relative hover:text-background/70">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="absolute -top-2 -right-2 bg-card text-background text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
+        </button>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu hidden bg-primary/90 text-background md:hidden">
+  <div class="container mx-auto px-4 py-3">
+    <div class="mb-4">
+      <div class="relative">
+        <input type="text" placeholder="Search products..." class="w-full rounded-full px-4 py-1 text-text">
+        <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-text/40">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+    <ul class="space-y-3 pb-4">
+      <li><a href="home.html" class="block py-2 hover:bg-secondary px-2 rounded">Home</a></li>
+      <li><a href="products.html" class="block py-2 bg-secondary px-2 rounded">Products</a></li>
+      <li><a href="offer.html" class="block py-2 hover:bg-secondary px-2 rounded">Offers</a></li>
+      <li><a href="#" class="block py-2 hover:bg-secondary px-2 rounded">Contact</a></li>
+      <li><a href="#" class="block py-2 hover:bg-secondary px-2 rounded">My Account</a></li>
+      <li><a href="#" class="block py-2 hover:bg-secondary px-2 rounded">Wishlist</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="bg-background shadow">
+  <div class="container mx-auto px-4">
+    <ul class="flex justify-center space-x-16 py-4 text-sm">
+      <li><a href="home.html" class="text-text/70 hover:text-secondary">Home</a></li>
+      <li><a href="products.html" class="text-secondary font-medium border-b-2 border-secondary">Products</a></li>
+      <li><a href="offer.html" class="text-text/70 hover:text-secondary">Offers</a></li>
+      <li><a href="#" class="text-text/70 hover:text-secondary">Contact</a></li>
+  </ul>
+  </div>
+</div>
+
+<div class="container mx-auto px-4 py-6">
+  <div class="flex flex-col lg:flex-row gap-6">
+    <div class="lg:w-1/4">
+      <div class="bg-background/80 p-4 rounded mb-6 shadow">
+        <h2 class="font-semibold text-text mb-4">Category</h2>
+        <ul class="space-y-2">
+          <li class="flex justify-between items-center text-primary">
+            <span>Supplements</span>
+            <span class="text-text/60">468</span>
+          </li>
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>Sneakers</span>
+            <span class="text-text/60">80</span>
+          </li>
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>Clothes</span>
+            <span class="text-text/60">56</span>
+          </li>
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>Accessories</span>
+            <span class="text-text/60">104</span>
+          </li>
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>Drinks</span>
+            <span class="text-text/60">20</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-background/80 p-4 rounded mb-6 shadow">
+        <h2 class="font-semibold text-text mb-4">Prices</h2>
+        <div class="mb-2 flex justify-between">
+          <span>Ranger</span>
+          <span class="text-text/60">180DT - 590DT</span>
+        </div>
+        <div class="px-2">
+          <input type="range" min="180" max="590" value="350" class="w-full accent-primary">
+          <div class="flex justify-between mt-1 text-xs text-text/60">
+            <span>180 DT</span>
+            <span>590 DT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-background/80 p-4 rounded mb-6 shadow">
+        <h2 class="font-semibold text-text mb-4">BRAND</h2>
+        <ul class="space-y-2">
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>ON</span>
+            <span class="text-text/60">142</span>
+          </li>
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>Impact</span>
+            <span class="text-text/60">32</span>
+          </li>
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>ON Nutrition</span>
+            <span class="text-text/60">97</span>
+          </li>
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>Muscle Tech</span>
+            <span class="text-text/60">160</span>
+          </li>
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>Dymatize</span>
+            <span class="text-text/60">20</span>
+          </li>
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>Isopure</span>
+            <span class="text-text/60">26</span>
+          </li>
+          <li class="flex justify-between items-center hover:text-primary">
+            <span>Cellucor</span>
+            <span class="text-text/60">12</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-background/90 p-4 rounded flex items-center shadow border border-gray-100 hover:border-primary ">
+        <div class="mr-4">
+          <img src="assets/pngtree-chatbot-color-icon-chat-bot-png-image_5256697.png" alt="Chat Bot" class="w-12 h-12 rounded-full">
+        </div>
+        <div>
+          <p class="font-medium text-text">I'm FitBot</p>
+          <p class="text-sm text-text/60">Chat with me!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:w-3/4">
+      <div class="bg-primary text-background rounded overflow-hidden mb-6 shadow">
+        <div class="flex flex-col md:flex-row">
+          <div class="p-6 md:w-2/3">
+            <h2 class="text24xl font-bold mb-2">Nike Air Max TR 5</h2>
+            <p class="mb-4">The Nike Air Max TR 5 features Max Air cushioning and a flat sole for stability, with enhanced support for strength training.</p>
+            <a href="#" class="inline-block text-sm bg-background text-text px-4 py-1 uppercase font-medium rounded">SHOP NOW</a>
+          </div>
+          <div class="md:w-1/3 flex items-center justify-center">
+            <img src="assets/Adobe%20Express%20-%20file%20(3).png" alt="Nike Air Max TR 5" class="max-h-48 object-contain">
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-between items-center mb-6 bg-background/70 p-2 rounded shadow">
+        <div class="flex items-center space-x-4 mb-2 md:mb-0">
+          <span class="text-sm">12 Items</span>
+
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">Sort By:</span>
+            <select class="text-sm bg-background border rounded px-2 py-1">
+              <option>Name</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">Show:</span>
+            <select class="text-sm bg-background border rounded px-2 py-1">
+              <option>12</option>
+              <option>24</option>
+              <option>48</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flex space-x-2">
+          <button class="bg-background/60 p-1 rounded">
+            <i class="fas fa-th-large text-primary"></i>
+          </button>
+          <button class="bg-background p-1 rounded border">
+            <i class="fas fa-list text-text/60"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        <div class="bg-background/80 rounded overflow-hidden shadow">
+          <div class="p-4 relative">
+            <button class="absolute top-4 right-4 text-text/40 hover:text-card">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="text-xs text-text/60 mb-1">Supplements</div>
+            <h3 class="font-medium mb-2 text-text">3X Gold Standard Whey</h3>
+            <div class="flex justify-center mb-4 h-40">
+              <img src="assets/Adobe%20Express%20-%20file.png" alt="Protein" class="object-contain h-full">
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-lg text-text">190 DT</p>
+              </div>
+              <button class="bg-secondary text-background text-xs px-3 py-1 rounded">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-background/80 rounded overflow-hidden shadow">
+          <div class="p-4 relative">
+            <button class="absolute top-4 right-4 text-text/40 hover:text-card">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="text-xs text-text/60 mb-1">Supplements</div>
+            <h3 class="font-medium mb-2 text-text">Wear Pack Gym For Girl</h3>
+            <div class="flex justify-center mb-4 h-40">
+              <img src="assets/Adobe%20Express%20-%20file%20(1).png" alt="Gym Wear" class="object-contain h-full">
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-lg text-text">190 DT</p>
+              </div>
+              <button class="bg-secondary text-background text-xs px-3 py-1 rounded">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-background/80 rounded overflow-hidden shadow">
+          <div class="p-4 relative">
+            <button class="absolute top-4 right-4 text-text/40 hover:text-card">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="text-xs text-text/60 mb-1">Supplements</div>
+            <h3 class="font-medium mb-2 text-text">Impact Creatine</h3>
+            <div class="flex justify-center mb-4 h-40">
+              <img src="assets/Adobe%20Express%20-%20file%20(2).png" alt="Creatine" class="object-contain h-full">
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-lg text-text">120 DT</p>
+              </div>
+              <button class="bg-secondary text-background text-xs px-3 py-1 rounded">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-background/80 rounded overflow-hidden shadow">
+          <div class="p-4 relative">
+            <button class="absolute top-4 right-4 text-text/40 hover:text-card">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="text-xs text-text/60 mb-1">Supplements</div>
+            <h3 class="font-medium mb-2 text-text">ON Gold Standard Isolate</h3>
+            <div class="flex justify-center mb-4 h-40">
+              <img src="assets/Remove%20background%20project%20(1).png" alt="Isolate" class="object-contain h-full">
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-lg text-text">210 DT</p>
+                <p class="text-xs text-text/60"><s>260 DT</s> <span class="text-card">-20% off</span></p>
+              </div>
+              <button class="bg-secondary text-background text-xs px-3 py-1 rounded">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-background/80 rounded overflow-hidden shadow">
+          <div class="p-4 relative">
+            <button class="absolute top-4 right-4 text-text/40 hover:text-card">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="text-xs text-text/60 mb-1">Supplements</div>
+            <h3 class="font-medium mb-2 text-text">Iso Whey Zero</h3>
+            <div class="flex justify-center mb-4 h-40">
+              <img src="assets/Remove%20background%20project.png" alt="Whey Zero" class="object-contain h-full">
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-lg text-text">150 DT</p>
+                <p class="text-xs text-text/60"><s>180 DT</s> <span class="text-card">-15% off</span></p>
+              </div>
+              <button class="bg-secondary text-background text-xs px-3 py-1 rounded">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-background/80 rounded overflow-hidden shadow">
+          <div class="p-4 relative">
+            <button class="absolute top-4 right-4 text-text/40 hover:text-card">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="text-xs text-text/60 mb-1">Supplements</div>
+            <h3 class="font-medium mb-2 text-text">ON Hydro Whey</h3>
+            <div class="flex justify-center mb-4 h-40">
+              <img src="assets/Remove%20background%20project%20(8).png" alt="Hydro Whey" class="object-contain h-full">
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-lg text-text">230 DT</p>
+                <p class="text-xs text-text/60"><s>280 DT</s> <span class="text-card">-20% off</span></p>
+              </div>
+              <button class="bg-secondary text-background text-xs px-3 py-1 rounded">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-background/80 rounded overflow-hidden shadow">
+          <div class="p-4 relative">
+            <button class="absolute top-4 right-4 text-text/40 hover:text-card">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="text-xs text-text/60 mb-1">Supplements</div>
+            <h3 class="font-medium mb-2 text-text">ON Amino Energy</h3>
+            <div class="flex justify-center mb-4 h-40">
+              <img src="assets/Remove%20background%20project%20(9).png" alt="Amino Energy" class="object-contain h-full">
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-lg text-text">90 DT</p>
+              </div>
+              <button class="bg-secondary text-background text-xs px-3 py-1 rounded">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-background/80 rounded overflow-hidden shadow">
+          <div class="p-4 relative">
+            <button class="absolute top-4 right-4 text-text/40 hover:text-card">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="text-xs text-text/60 mb-1">Supplements</div>
+            <h3 class="font-medium mb-2 text-text">ON Mass</h3>
+            <div class="flex justify-center mb-4 h-40">
+              <img src="assets/Remove%20background%20project%20(11).png" alt="ON Mass" class="object-contain h-full">
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-lg text-text">280 DT</p>
+              </div>
+              <button class="bg-secondary text-background text-xs px-3 py-1 rounded">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-background/80 rounded overflow-hidden shadow">
+          <div class="p-4 relative">
+            <button class="absolute top-4 right-4 text-text/40 hover:text-card">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="text-xs text-text/60 mb-1">Supplements</div>
+            <h3 class="font-medium mb-2 text-text">Mass Gainer</h3>
+            <div class="flex justify-center mb-4 h-40">
+              <img src="assets/MASS-GAINER-1.5KG-TUNISIE-MASS-GAINER-TUNIS-.png" alt="Mass Gainer" class="object-contain h-full">
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-lg text-text">80 DT</p>
+                <p class="text-xs text-text/60"><s>100 DT</s> <span class="text-card">-20% off</span></p>
+              </div>
+              <button class="bg-secondary text-background text-xs px-3 py-1 rounded">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <nav class="flex space-x-2">
+          <a href="#" class="px-3 py-1 bg-background/60 text-text/80 rounded">1</a>
+          <a href="#" class="px-3 py-1 bg-background/60 text-text/80 rounded">2</a>
+          <a href="#" class="px-3 py-1 bg-background/60 text-text/80 rounded">3</a>
+          <a href="#" class="px-3 py-1 bg-primary text-background rounded">4</a>
+          <a href="#" class="px-3 py-1 bg-background/60 text-text/80 rounded">5</a>
+          <a href="#" class="px-3 py-1 bg-background/60 text-text/80 rounded">6</a>
+          <a href="#" class="px-3 py-1 bg-background/60 text-text/80 rounded">7</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-primary text-background py-10 mt-8">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between mb-8">
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-xl font-bold mb-4">Sportiva</h3>
+      </div>
+
+      <div class="mb-6 md:mb-0">
+        <h4 class="font-medium mb-4">About</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">How it works</a></li>
+          <li><a href="#" class="hover:underline">Featured</a></li>
+          <li><a href="#" class="hover:underline">Partnership</a></li>
+          <li><a href="#" class="hover:underline">Business Relation</a></li>
+        </ul>
+      </div>
+
+      <div class="mb-6 md:mb-0">
+        <h4 class="font-medium mb-4">Community</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Events</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Podcast</a></li>
+          <li><a href="#" class="hover:underline">Invite a friend</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-medium mb-4">Socials</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Discord</a></li>
+          <li><a href="#" class="hover:underline">Instagram</a></li>
+          <li><a href="#" class="hover:underline">Twitter</a></li>
+          <li><a href="#" class="hover:underline">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-background pt-4 flex flex-col md:flex-row justify-between text-xs">
+      <p>© 2025 SPORTIVA. All rights reserved.</p>
+      <div class="flex space-x-4 mt-2 md:mt-0">
+        <a href="#" class="hover:underline">Privacy & Policy</a>
+        <a href="#" class="hover:underline">Terms & Condition</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    if (menuButton && mobileMenu) {
+      menuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    const addToCartButtons = document.querySelectorAll('button');
+    addToCartButtons.forEach(button => {
+      if (button.textContent.includes('ADD TO CART')) {
+        button.addEventListener('click', function() {
+          const cartCounter = document.querySelector('.fa-shopping-cart + span');
+          if (cartCounter) {
+            const currentCount = parseInt(cartCounter.textContent);
+            cartCounter.textContent = currentCount + 1;
+
+            alert('Product added to cart!');
+          }
+        });
+      }
+    });
+
+    const wishlistButtons = document.querySelectorAll('.fa-heart').forEach(icon => {
+      icon.parentElement.addEventListener('click', function() {
+        icon.classList.toggle('far');
+        icon.classList.toggle('fas');
+        icon.classList.toggle('text-card');
+      });
+    });
+  });
+</script>
+</body>
+</html>
