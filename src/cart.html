@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportiva - Shopping Cart</title>
+    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="font-sans bg-background">
+<nav class="bg-primary text-background">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="text-xl font-bold">Sportiva</div>
+        <div class="flex-1 mx-6 max-w-md hidden md:block">
+            <div class="relative">
+                <input type="text" placeholder="Search products..." class="w-full rounded-full px-4 py-1 text-text">
+                <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-text/40">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="md:hidden mobile-menu-button" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="hover:text-background/70 hidden md:block"><i class="far fa-user"></i></button>
+            <button class="hover:text-background/70 hidden md:block"><i class="far fa-heart"></i></button>
+            <a href="cart.html">
+                <button class="relative hover:text-background/70">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="absolute -top-2 -right-2 bg-card text-background text-xs rounded-full w-4 h-4 flex items-center justify-center">4</span>
+                </button>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="mobile-menu hidden bg-primary/90 text-background md:hidden">
+    <div class="container mx-auto px-4 py-3">
+        <div class="mb-4">
+            <div class="relative">
+                <input type="text" placeholder="Search products..." class="w-full rounded-full px-4 py-1 text-text">
+                <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-text/40">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <ul class="space-y-3 pb-4">
+            <li><a href="home.html" class="block py-2 hover:bg-secondary px-2 rounded">Home</a></li>
+            <li><a href="products.html" class="block py-2 hover:bg-secondary px-2 rounded">Products</a></li>
+            <li><a href="offer.html" class="block py-2 hover:bg-secondary px-2 rounded">Offers</a></li>
+            <li><a href="#" class="block py-2 hover:bg-secondary px-2 rounded">Contact</a></li>
+            <li><a href="#" class="block py-2 hover:bg-secondary px-2 rounded">My Account</a></li>
+            <li><a href="#" class="block py-2 hover:bg-secondary px-2 rounded">Wishlist</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="bg-background shadow hidden md:block">
+    <div class="container mx-auto px-4">
+        <ul class="flex justify-center space-x-16 py-4 text-sm">
+            <li><a href="home.html" class="text-text/70 hover:text-primary">Home</a></li>
+            <li><a href="products.html" class="text-text/70 hover:text-primary">Products</a></li>
+            <li><a href="offer.html" class="text-text/70 hover:text-primary">Offers</a></li>
+            <li><a href="#" class="text-text/70 hover:text-primary">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<main class="container mx-auto p-4 sm:p-8">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6">Cart <span class="bg-card text-white px-2 py-1 rounded-full text-base sm:text-lg">4</span></h2>
+
+    <div class="bg-white shadow-md rounded-lg p-4 sm:p-6 overflow-x-auto">
+        <table class="w-full text-left text-base sm:text-lg">
+            <thead>
+            <tr class="border-b">
+                <th class="py-4">Product</th>
+                <th class="py-4">Price</th>
+                <th class="py-4">Quantity</th>
+                <th class="py-4">Unit Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="border-b">
+                <td class="flex items-center py-6">
+                    <button class="text-card mr-4 text-xl">X</button>
+                    <img src="assets/whey.png" alt="Whey" class="w-32 h-32 sm:w-56 sm:h-56 object-cover mr-4 sm:mr-6">
+                    <span>Elite Whey Zero</span>
+                </td>
+                <td>180DT</td>
+                <td>
+                    <div class="flex items-center border rounded w-max">
+                        <button class="px-3 sm:px-4 text-xl">-</button>
+                        <input type="text" value="1" class="w-8 sm:w-12 text-center border-l border-r text-base sm:text-lg">
+                        <button class="px-3 sm:px-4 text-xl">+</button>
+                    </div>
+                </td>
+                <td>180DT</td>
+            </tr>
+            <tr class="border-b">
+                <td class="flex items-center py-6">
+                    <button class="text-card mr-4 text-xl">X</button>
+                    <img src="assets/protein.png" alt="Protein" class="w-32 h-32 sm:w-56 sm:h-56 object-cover mr-4 sm:mr-6">
+                    <span>CityStyle Whey</span>
+                </td>
+                <td>440DT</td>
+                <td>
+                    <div class="flex items-center border rounded w-max">
+                        <button class="px-3 sm:px-4 text-xl">-</button>
+                        <input type="text" value="2" class="w-8 sm:w-12 text-center border-l border-r text-base sm:text-lg">
+                        <button class="px-3 sm:px-4 text-xl">+</button>
+                    </div>
+                </td>
+                <td>220DT</td>
+            </tr>
+            <tr class="border-b">
+                <td class="flex items-center py-6">
+                    <button class="text-card mr-4 text-xl">X</button>
+                    <img src="assets/gymset.png" alt="Gym Set" class="w-32 h-32 sm:w-56 sm:h-56 object-cover mr-4 sm:mr-6">
+                    <span>Wear Pack Gym For Girl</span>
+                </td>
+                <td>260DT</td>
+                <td>
+                    <div class="flex items-center border rounded w-max">
+                        <button class="px-3 sm:px-4 text-xl">-</button>
+                        <input type="text" value="1" class="w-8 sm:w-12 text-center border-l border-r text-base sm:text-lg">
+                        <button class="px-3 sm:px-4 text-xl">+</button>
+                    </div>
+                </td>
+                <td>260DT</td>
+            </tr>
+            <tr>
+                <td class="flex items-center py-6">
+                    <button class="text-card mr-4 text-xl">X</button>
+                    <img src="assets/shoes.png" alt="Shoes" class="w-32 h-32 sm:w-56 sm:h-56 object-cover mr-4 sm:mr-6">
+                    <span>Sneakers for girls</span>
+                </td>
+                <td>470DT</td>
+                <td>
+                    <div class="flex items-center border rounded w-max">
+                        <button class="px-3 sm:px-4 text-xl">-</button>
+                        <input type="text" value="2" class="w-8 sm:w-12 text-center border-l border-r text-base sm:text-lg">
+                        <button class="px-3 sm:px-4 text-xl">+</button>
+                    </div>
+                </td>
+                <td>235DT</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-8 text-lg">
+        <div class="flex max-w-md">
+            <input type="text" placeholder="Voucher Code" class="border border-r-0 p-3 w-full rounded-l text-sm">
+            <button class="bg-primary text-white px-8 py-3 rounded-r flex-shrink-0 min-w-[120px] text-center">Redeem</button>
+        </div>
+    </div>
+
+    <div class="bg-white shadow-lg rounded-lg p-4 sm:p-8 mt-8 w-full lg:w-1/2 ml-auto">
+        <div class="flex justify-between border-b pb-3">
+            <span>Subtotal</span>
+            <span>1350DT</span>
+        </div>
+        <div class="flex justify-between border-b py-3">
+            <span>Shipping Fee</span>
+            <span>0DT</span>
+        </div>
+        <div class="flex justify-between border-b py-3">
+            <span>Coupon</span>
+            <span>-200DT</span>
+        </div>
+        <div class="flex justify-between font-bold text-xl sm:text-2xl py-5">
+            <span>Total</span>
+            <span>1150DT</span>
+        </div>
+        <button class="w-full bg-primary text-white py-3 rounded-lg">Check out</button>
+    </div>
+</main>
+
+<footer class="bg-primary text-background py-6 sm:py-10 mt-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between mb-8">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-xl font-bold mb-4">Sportiva</h3>
+            </div>
+
+            <div class="mb-6 md:mb-0">
+                <h4 class="font-medium mb-4">Help</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                    <li><a href="#" class="hover:underline">Products</a></li>
+                    <li><a href="#" class="hover:underline">Returns</a></li>
+                    <li><a href="#" class="hover:underline">Account & Orders</a></li>
+                </ul>
+            </div>
+
+            <div class="mb-6 md:mb-0">
+                <h4 class="font-medium mb-4">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:underline">History</a></li>
+                    <li><a href="#" class="hover:underline">Jobs</a></li>
+                    <li><a href="#" class="hover:underline">Policy</a></li>
+                    <li><a href="#" class="hover:underline">Press</a></li>
+                    <li><a href="#" class="hover:underline">Vision & Values</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-medium mb-4">Social</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:underline">Instagram</a></li>
+                    <li><a href="#" class="hover:underline">Facebook</a></li>
+                    <li><a href="#" class="hover:underline">WhatsApp</a></li>
+                    <li><a href="#" class="hover:underline">TikTok</a></li>
+                    <li><a href="#" class="hover:underline">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-secondary/70 pt-4 flex flex-col md:flex-row justify-between text-xs">
+            <p>© 2025 SPORTIVA. All rights reserved.</p>
+            <div class="flex space-x-4 mt-2 md:mt-0">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
+</body>
+</html>
