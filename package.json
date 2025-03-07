@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch"
+    "build": "npx tailwindcss -i public/style.css -o ./public/style.css --watch",
+    "postinstall": "chmod +x node_modules/.bin/*"
   },
   "keywords": [],
   "author": "",
